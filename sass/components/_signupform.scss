@@ -1,0 +1,114 @@
+/*================== signup form start here ========================*/
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+.signup {
+
+    background-color: $bgb;
+    padding: 100px 0;
+
+    &__close {
+        text-align: center;
+        display: block;
+    }
+
+    i.fa-solid.fa-xmark {
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    &__wrap {
+        background-color: #fff;
+        max-width: 600px;
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    &__logo {
+        &__img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        padding-top: 50px;
+
+        &__heading {
+            color: #111;
+            padding-bottom: 25px;
+            padding-top: 15px;
+        }
+    }
+    &__form{
+        width: 90%;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label {
+        margin-bottom: 10px
+    }
+
+    &__btn {
+        @include btn;
+    }
+
+    &__formmodifier {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--modileft {
+            display: flex;
+            align-items: center;
+
+            h4 {
+                font-size: 14px;
+                padding-left: 20px;
+                margin-top: -20px;
+
+                span {
+                    color: #0D85FE;
+                }
+            }
+        }
+
+        &--modiright {
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__heading4 {
+        color: #111;
+        text-align: center;
+        text-align: center;
+        display: block;
+        span {
+            color: #0d6efd;
+            padding-left: 8px;
+        }
+
+        &:hover {
+            color: #111;
+        }
+    }
+
+}
+
+input.signup__input {
+    @include forInput;
+    margin-bottom: 10px;
+}
+
+/*================== signup form end here ========================*/

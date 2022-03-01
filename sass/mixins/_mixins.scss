@@ -1,0 +1,21 @@
+@import '../variables/variables';
+// login and signup form mixins start here ========================>
+@mixin forInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E7E7E7;
+    border-radius: 50px;
+}
+@mixin btn {
+    width: 100%;
+    background-color: $bgb;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+// login and signup form mixins end here=================>
